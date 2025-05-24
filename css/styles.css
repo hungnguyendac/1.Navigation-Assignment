@@ -88,6 +88,11 @@
     display: flex;
 }
 
+.header_list.column-mode {
+    flex-direction: column;
+}
+
+
 .header_item {
     padding: 15px;
     color: #9c9c9c;
@@ -110,6 +115,7 @@
     width: 24px;
     height: 24px;
     margin-left: 20px;
+    cursor: pointer;
     background-image: url("/logo.png");
     background-repeat: no-repeat;
 }
@@ -161,6 +167,10 @@
     background-color: aliceblue;
 }
 
+.popup.active {
+    display: flex;
+}
+
 .popup_header{}
 
 .popup_logo {
@@ -207,11 +217,10 @@
 .popup_menu_list{
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .popup_menu_item {
-    height: 40px;
+    height: 30px;
     border-bottom: 1px solid #c5c1c1;
 }
 
@@ -287,6 +296,11 @@
     .header_icon .icon_search,
     .header_icon .icon_user {
         display: none;
+    }
+
+    .popup .header_list {
+        display: flex;
+        flex-direction: column;
     }
 }
 
